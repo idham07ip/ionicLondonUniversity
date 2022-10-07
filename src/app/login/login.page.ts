@@ -10,8 +10,6 @@ import {
   ToastController,
   LoadingController,
 } from '@ionic/angular';
-import { tick } from '@angular/core/testing';
-import { timeEnd } from 'console';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -84,7 +82,7 @@ export class LoginPage implements OnInit {
         } else {
         await loading.present();
         data = this.http.get(
-        'http://localhost:8080/ci3-for-mobprog/api/loginn/' +
+        'https://apimobprog.adistiradyiputra.my.id/api/login/' +
           this.email +
           '/' +
           this.password
@@ -97,7 +95,7 @@ export class LoginPage implements OnInit {
         )
         .subscribe( async ( result) => {
           this.results = result;
-          if (this.results.status === 'Ok') {
+          if (this.results.status === 'ok') {
             // this.router.navigate(['tabs/tab1', {data: this.input_b}]);
             await this.storage.set('isLoggedIn', this.results.result[0]);
                     // storage.set('isLoggedIn', res.result);
@@ -105,7 +103,7 @@ export class LoginPage implements OnInit {
                     loader.dismiss();
                     await this.dismiss();
             this.email = null;
-            this.navCtrl.navigateRoot(['/testing']);
+            this.navCtrl.navigateRoot(['tabs/tab1']);
             this.password = null;
             console.log(this.results)
           } else {
