@@ -70,7 +70,7 @@ export class LoginPage implements OnInit {
       };
 
       try {
-        const storage = await this.storage.create();
+       // const storage = await this.storage.create();
         let data: Observable<any>;
         this.password = input;
         const loading = await this.loadingCtrl.create({
