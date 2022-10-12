@@ -26,7 +26,8 @@ const routes: Routes = [
   {
     path: 'testing',
     loadChildren: () => import('./testing/testing.module').then( m => m.TestingPageModule)
-  },  {
+  },
+  {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
@@ -41,6 +42,42 @@ const routes: Routes = [
   {
     path: 'tab3',
     loadChildren: () => import('./tab3/tab3.module').then( m => m.Tab3PageModule)
+  },
+  {
+    path: 'study',
+    loadChildren: () => import('./study/study.module').then( m => m.StudyPageModule)
+  },
+  {
+    path: 'current-students',
+    loadChildren: () => import('./current-students/current-students.module').then( m => m.CurrentStudentsPageModule)
+  },
+  {
+    path: 'news-and-events',
+    loadChildren: () => import('./news-and-events/news-and-events.module').then( m => m.NewsAndEventsPageModule)
+  },
+  {
+    path: 'research',
+    loadChildren: () => import('./research/research.module').then( m => m.ResearchPageModule)
+  },
+  {
+    path: 'quick-links',
+    loadChildren: () => import('./quick-links/quick-links.module').then( m => m.QuickLinksPageModule)
+  },
+  {
+    path: 'our-services',
+    loadChildren: () => import('./our-services/our-services.module').then( m => m.OurServicesPageModule)
+  },
+  {
+    path: 'alumni-and-supporters',
+    loadChildren: () => import('./alumni-and-supporters/alumni-and-supporters.module').then( m => m.AlumniAndSupportersPageModule)
+  },
+  {
+    path: 'about-us',
+    loadChildren: () => import('./about-us/about-us.module').then( m => m.AboutUsPageModule)
+  },
+  {
+    path: 'more-information',
+    loadChildren: () => import('./more-information/more-information.module').then( m => m.MoreInformationPageModule)
   },
 
 

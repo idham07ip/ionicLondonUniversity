@@ -4,7 +4,7 @@
       <div class="title">
         <h2>Academic</h2>
         
-        <ion-buttons style="color: white; margin-left: 50%; margin-top: -120px;">
+        <ion-buttons style="color: white; margin-left: 72%; margin-top: -120px;">
           <ion-icon style="margin-right: 5px;" name="arrow-back-circle-sharp" (click)="logout()"></ion-icon>
           LOGOUT
         </ion-buttons>
@@ -21,49 +21,50 @@
       <h3>Menu</h3>
       <div class="content">
         <ion-row>
-          <ion-col size="4">
+          <ion-col size="4" [routerLink]="['/study']">
             <img src="/assets/pict1.png" alt="">
-            <p>test pict1</p>
+            <p>Study</p>
+
           </ion-col>
 
-          <ion-col size="4">
+          <ion-col size="4" [routerLink]="['/current-students']">
             <img src="/assets/pict2.png" alt="">
-            <p>test pict2</p>
+            <p>Current Students</p>
           </ion-col>
 
-          <ion-col size="4">
+          <ion-col size="4" [routerLink]="['/news-and-events']">
             <img src="/assets/pict3.png" alt="">
-            <p>test pict3</p>
+            <p>News & Events</p>
           </ion-col>
 
-          <ion-col size="4">
-            <img src="/assets/pict4.png" alt="">
-            <p>test pict4</p>
+          <ion-col size="4"  [routerLink]="['/research']">
+            <img src="/assets/research.png" alt="">
+            <p>Research</p>
           </ion-col>
 
-          <ion-col size="4">
-            <img src="/assets/pict5.png" alt="">
-            <p>test pict5</p>
+          <ion-col size="4" [routerLink]="['/quick-links']">
+            <img src="/assets/link.png" alt="">
+            <p>Quick Links</p>
           </ion-col>
 
-          <ion-col size="4">
-            <img src="/assets/pict6.png" alt="">
-            <p>test pict6</p>
+          <ion-col size="4" [routerLink]="['/our-services']">
+            <img src="/assets/customer-service.png" alt="" >
+            <p>Our Services</p>
           </ion-col>
 
-          <ion-col size="4">
+          <ion-col size="4" [routerLink]="['/alumni-and-supporters']">
             <img src="/assets/pict7.png" alt="">
-            <p>test pict7</p>
+            <p>Alumni & Supporters</p>
           </ion-col>
 
-          <ion-col size="4">
+          <ion-col size="4" [routerLink]="['/about-us']">
             <img src="/assets/pict8.png" alt="">
-            <p>test pict8</p>
+            <p>About Us</p>
           </ion-col>
 
-          <ion-col size="4">
+          <ion-col size="4" [routerLink]="['/more-information']">
             <img src="/assets/pict9.png" alt="">
-            <p>test pict9</p>
+            <p>More Information</p>
           </ion-col>
 
           <div class="bottom-section ion-margin">
@@ -80,4 +81,3 @@
 
   </div>
 </ion-content>
-
